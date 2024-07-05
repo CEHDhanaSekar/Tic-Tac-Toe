@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree';
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #000a0d;
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+}
+
+#root{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 276px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+    color: #cefffa;
+    display: flex;
+}
+
+.title span{
+    color: #00ffcc;
+    margin-left: 5px;
+}
+
+.title img{
+    width: 2rem;
+    margin: .25rem .5rem;
+}
+
+.board{
+    border-radius: .5rem;
+    width: 100%;
+    padding: .5rem;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+   width: 75px;
+   height: 75px;
+   border-radius: .5rem;
+   margin: 5px;
+   cursor: pointer;
+   display: grid;
+   place-items: center;
+   background-color: #002c39;
+}
+
+.box img{
+    width: 80%;
+}
+
+.box.clicked{
+    pointer-events: none;
+}
+
+.reset-btn{
+    margin: 1.5rem 0;
+    font-size: 1.25rem;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    border: none;
+    background-color: #00ffcc;
+    font-weight: 600;
+    transition: all .15s linear;
+}
+
+.reset-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0 #00ffcc,0px 0px 15px 0 #56ffdd,0px 0px 18px 0 #00ffcc;
+}
